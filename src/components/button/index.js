@@ -1,5 +1,7 @@
-import Button from './button.vue';
-import ButtonGroup from './button-group.vue';
+import Button from './src/button.vue'
 
-Button.Group = ButtonGroup;
-export default Button;
+Button.install = function (Vue) {
+  Vue.component(Button.name, Button)
+}
+
+export default Button

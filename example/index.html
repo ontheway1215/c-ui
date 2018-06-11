@@ -2,27 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../dist/styles/iview.css">
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="../dist/iview.js"></script>
-    <title>c-ui test page</title>
+    <title></title>
+    <link rel="stylesheet" href="https://unpkg.com/at-ui-style/css/at.min.css">
+    <script src="https://vuejs.org/js/vue.min.js"></script>
+    <script src="../dist/c-ui.js"></script>
   </head>
   <body>
     <div id="app">
-      <Button type="primary">Primary</Button>
-      <Button type="ghost">Ghost</Button>
-      <Button type="dashed">Dashed</Button>
-      <Button type="text">Text</Button>
+      <at-button @click="showMessage">Show message</at-button>
+      <at-button type="primary">主要按钮</at-button>
+      <at-button>次要按钮</at-button>
+      <at-button type="text">文字按钮</at-button>
     </div>
     <script type="text/javascript">
-      new Vue({
-        el: "#app",
-        data() {
-          return {
-
-          }
+    new Vue({
+      el: '#app',
+      methods: {
+        showMessage: function () {
+          this.$Message('Thanks for using AT-UI')
         }
-      })
+      }
+    })
     </script>
   </body>
 </html>
