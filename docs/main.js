@@ -6,10 +6,10 @@ import router from './router'
 import DemoBox from './components/demobox'
 import IconList from './components/iconlist'
 import VueClipboard from './directives/clipboard'
-import AtUI from 'at-ui-lib'
-import zhLocale from 'at-ui-locale-zh'
-import enLocale from 'at-ui-locale-en'
-import 'at-ui-style'
+import AtUI from 'c-ui-lib'
+import zhLocale from 'c-ui-locale-zh'
+import enLocale from 'c-ui-locale-en'
+import 'c-ui-style'
 
 Vue.use(VueI18n)
 Vue.use(AtUI)
@@ -25,7 +25,7 @@ if (['en', 'zh'].indexOf(navigatorLang) <= -1) {
   navigatorLang = ''
 }
 
-const userLang = urlLang || window.localStorage.getItem('at-ui-language') || navigatorLang || 'zh'
+const userLang = urlLang || window.localStorage.getItem('c-ui-language') || navigatorLang || 'zh'
 
 const i18n = new VueI18n({
   locale: userLang,
