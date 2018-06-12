@@ -56,7 +56,7 @@ module.exports = {
       'c-ui-lib': path.resolve(__dirname, '../src/index.js'),
       'c-ui-locale-zh': path.resolve(__dirname, '../src/locale/lang/zh-CN.js'),
       'c-ui-locale-en': path.resolve(__dirname, '../src/locale/lang/en-US.js'),
-      'c-ui-style': 'stylesheet/c-ui-style/src/index.scss',
+      'c-ui-style': 'stylesheet/src/index.scss',
       'vue': 'vue/dist/vue.js'
     }
   },

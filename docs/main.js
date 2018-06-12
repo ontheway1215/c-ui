@@ -9,7 +9,7 @@ import VueClipboard from './directives/clipboard'
 import AtUI from 'c-ui-lib'
 import zhLocale from 'c-ui-locale-zh'
 import enLocale from 'c-ui-locale-en'
-// import 'c-ui-style'
+import 'c-ui-style'
 
 Vue.use(VueI18n)
 Vue.use(AtUI)
@@ -40,7 +40,7 @@ const i18n = new VueI18n({
   }
 })
 
-AtUI.i18n((key, value) => i18n.t(key, value))
+// AtUI.i18n((key, value) => i18n.t(key, value))
 
 Vue.config.debug = process.env.NODE_ENV !== 'production'
 
