@@ -51,12 +51,12 @@ module.exports = {
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components'),
-      'stylesheet': path.resolve(__dirname, '../src/stylesheet'),
+      'stylesheet': path.resolve(__dirname, '../src/stylesheet/c-ui-style'),
       'c-ui': path.resolve(__dirname, '..'),
       'c-ui-lib': path.resolve(__dirname, '../src/index.js'),
       'c-ui-locale-zh': path.resolve(__dirname, '../src/locale/lang/zh-CN.js'),
       'c-ui-locale-en': path.resolve(__dirname, '../src/locale/lang/en-US.js'),
-      'c-ui-style': 'stylesheet/src/index.scss',
+      'c-ui-style': 'stylesheet/c-ui-style/src/index.scss',
       'vue': 'vue/dist/vue.js'
     }
   },

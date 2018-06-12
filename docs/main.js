@@ -9,7 +9,7 @@ import VueClipboard from './directives/clipboard'
 import AtUI from 'c-ui-lib'
 import zhLocale from 'c-ui-locale-zh'
 import enLocale from 'c-ui-locale-en'
-import 'c-ui-style'
+// import 'c-ui-style'
 
 Vue.use(VueI18n)
 Vue.use(AtUI)
