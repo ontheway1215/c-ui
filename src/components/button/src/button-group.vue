@@ -1,8 +1,8 @@
 <template>
   <div
-    class="c-btn-group"
+    class="at-btn-group"
     :class="[
-      size ? `c-btn-group--${size}` : ''
+      size ? `at-btn-group--${size}` : ''
     ]"
   >
     <slot></slot>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'CButtonGroup',
+  name: 'AtButtonGroup',
   props: {
     size: String,
     gap: {
