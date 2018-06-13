@@ -1,9 +1,11 @@
 import Button from './components/button'
 import ButtonGroup from './components/button-group'
+import Tag from './components/tag'
 
 const components = {
   Button,
-  ButtonGroup
+  ButtonGroup,
+  Tag
 }
 
 function install (Vue, opts = {}) {
