@@ -56,13 +56,37 @@
         <at-alert message="警告提示的标题" description="警告提示的详细说明警告提示的详细
         说明警告提示的详细说明" type="warning" show-icon closable></at-alert>
       </div>
+      <div class="section">
+        <at-input v-model="inputValue2" placeholder="success" status="success" icon="check-circle"></at-input>
+        <at-input v-model="inputValue2" placeholder="error" status="error" icon="x-circle"></at-input>
+        <at-input v-model="inputValue2" placeholder="warning" status="warning" icon="alert-circle"></at-input>
+        <at-input v-model="inputValue2" placeholder="info" status="info" icon="info"></at-input>
+      </div>
+      <div class="section">
+        <p class="demo-desc">this.$Modal.alert()</p>
+        <at-button @click="modalAlert">Alert</at-button>
+      </div>
     </div>
     <script type="text/javascript">
     new Vue({
       el: '#app',
+      data () {
+        return {
+          inputValue2: ''
+        }
+      },
       methods: {
         showMessage: function () {
           this.$Message('Thanks for using AT-UI')
+        },
+        modalAlert () {
+          this.$Modal.alert({
+            title: '这里是标题名称',
+            content: '这里是文本内容',
+            callback: function (action) {
+              this.$Message(action)
+            }
+          })
         }
       }
     })
