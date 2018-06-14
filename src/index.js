@@ -4,6 +4,7 @@ import Tag from './components/tag'
 import Alert from './components/alert'
 import Input from './components/input'
 import Modal from './components/modal'
+import Message from './components/message'
 
 const components = {
   Button,
@@ -11,7 +12,8 @@ const components = {
   Tag,
   Alert,
   Input,
-  Modal
+  Modal,
+  Message
 }
 
 function install (Vue, opts = {}) {
