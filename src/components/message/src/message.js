@@ -8,7 +8,7 @@ const instances = []
 let seed = 1
 let zindexSeed = 1010
 
-const Message = options = > {
+const Message = options => {
   if (Vue.prototype.$isServer) return
   options = options || {}
 
