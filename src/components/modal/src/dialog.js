@@ -45,7 +45,7 @@ const defaultCallback = action => {
 
 const initInstance = () => {
   instance = new DialogConstructer({
-    el: document.creatElement('div')
+    el: document.createElement('div')
   })
 
   instance.callback = defaultCallback
@@ -98,7 +98,7 @@ const showNextModal = () => {
   }
 }
 
-const Dialog = (options.callback) => {
+const Dialog = (options, callback) => {
   if (Vue.prototype.$isServer) return
   if (options.callback && !callback) {
     callback = options.callback
@@ -118,7 +118,7 @@ const Dialog = (options.callback) => {
   }
 
   modalQueue.push({
-    options.Object.assign({}, defaults, options),
+    options: Object.assign({}, defaults, options),
     callback
   })
 

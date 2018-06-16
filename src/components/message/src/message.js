@@ -93,7 +93,7 @@ messageType.forEach(type => {
       }
     }
     options.type = type
-    options.cion = option.icon
+    options.icon = option.icon
     return Message(options)
   }
 })

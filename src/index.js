@@ -5,6 +5,7 @@ import Alert from './components/alert'
 import Input from './components/input'
 import Modal from './components/modal'
 import Message from './components/message'
+import Dialog from './components/dialog'
 
 const components = {
   Button,
@@ -13,7 +14,8 @@ const components = {
   Alert,
   Input,
   Modal,
-  Message
+  Message,
+  Dialog
 }
 
 function install (Vue, opts = {}) {
@@ -25,6 +27,9 @@ function install (Vue, opts = {}) {
       Vue.component(components[item].name, components[item])
     }
   }
+
+  Vue.prototype.$Modal = Dialog
+  Vue.prototype.$Message = Message
 }
 
 //auto install
