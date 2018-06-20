@@ -72,7 +72,7 @@ Message.close = (id, customCloseFunc) => {
   }
 
   if (len > 1) {
-    for (let i = index; i < len -1; i++) {
+    for (let i = index; i < len - 1; i++) {
       instances[i].dom.style.top = `${parseInt(instances[i].dom.style.top) -
       removedHeight - 8}px`
     }

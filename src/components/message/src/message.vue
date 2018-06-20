@@ -38,7 +38,7 @@ export default {
       const classArr = {
         'success': 'icon-check-circle',
         'error': 'icon-x-circle',
-        'wraning': 'icon-alert-circle',
+        'warning': 'icon-alert-circle',
         'info': 'icon-info',
         'loading': 'icon-loader'
       }
