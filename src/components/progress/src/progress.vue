@@ -11,7 +11,7 @@
 
     <!-- S 条形进度条 -->
     <div class="at-progress-bar" v-else>
-      <div class="at-progress-bar__wrapper" :style="barStyle">
+      <div class="at-progress-bar__wraper" :style="barStyle">
         <div class="at-progress-bar__inner" :style="{ width: percent + '%'}"></div>
       </div>
     </div>
