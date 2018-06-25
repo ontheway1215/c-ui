@@ -1,6 +1,6 @@
-import Tag from './src/progress.vue'
+import Progress from './src/progress.vue'
 
-Tag.install = function (Vue) {
+Progress.install = function (Vue) {
   Vue.component(Progress.name, Tag)
 }
 

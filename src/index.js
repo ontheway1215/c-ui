@@ -6,6 +6,7 @@ import Input from './components/input'
 import Modal from './components/modal'
 import Message from './components/message'
 import Dialog from './components/dialog'
+import Progress from './components/progress'
 
 const components = {
   Button,
@@ -15,7 +16,8 @@ const components = {
   Input,
   Modal,
   Message,
-  Dialog
+  Dialog,
+  Progress
 }
 
 function install (Vue, opts = {}) {
