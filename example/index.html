@@ -67,6 +67,16 @@
         <p class="demo-desc">this.$Modal.confirm()</p>
         <at-button @click="modalConfirm">Confirm</at-button>
       </div>
+      <div class="section">
+        <div class="row no-gutter">
+          <div class="col-sm-24 col-md-12">
+            <at-progress :percent="0" :stroke-width="4"></at-progress>
+            <at-progress :percent="60" :stroke-width="4"></at-progress>
+            <at-progress :percent="100" :stroke-width="4"></at-progress>
+            <at-progress :percent="50" status="error" :stroke-width="4"></at-progress>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="text/javascript">
     new Vue({
