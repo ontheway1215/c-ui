@@ -7,6 +7,8 @@ import Modal from './components/modal'
 import Message from './components/message'
 import Dialog from './components/dialog'
 import Progress from './components/progress'
+import Checkbox from './components/checkbox'
+import CheckboxGroup from './components/checkbox-group'
 
 const components = {
   Button,
@@ -17,7 +19,9 @@ const components = {
   Modal,
   Message,
   Dialog,
-  Progress
+  Progress,
+  Checkbox,
+  CheckboxGroup
 }
 
 function install (Vue, opts = {}) {
