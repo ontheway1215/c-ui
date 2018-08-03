@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import { findComponentUpward } from 'at-ui/src/utils/util'
-import Emitter from 'at-ui/src/mixins/emitter'
+import { findComponentUpward } from 'c-ui/src/utils/util'
+import Emitter from 'c-ui/src/mixins/emitter'
 export default {
   name: 'AtCheckbox',
   mixins: [Emitter],
